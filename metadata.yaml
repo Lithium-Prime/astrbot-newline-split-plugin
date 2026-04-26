@@ -1,0 +1,6 @@
+name: astrbot_plugin_newline_split
+desc: Split LLM newline replies into multiple QQ messages
+help: 按换行把 LLM 回复拆成多条消息发送
+version: v0.1.0
+author: Lithium
+repo: ""

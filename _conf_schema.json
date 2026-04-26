@@ -1,0 +1,102 @@
+{
+  "enable": {
+    "description": "是否启用换行拆分多条发送",
+    "type": "bool",
+    "default": true
+  },
+  "max_parts": {
+    "description": "单次最多拆成几条消息",
+    "type": "int",
+    "default": 4
+  },
+  "first_message_immediate": {
+    "description": "第一条是否立即发送",
+    "type": "bool",
+    "default": true
+  },
+  "min_delay": {
+    "description": "最小发送间隔，单位秒",
+    "type": "float",
+    "default": 0.6
+  },
+  "max_delay": {
+    "description": "最大发送间隔，单位秒",
+    "type": "float",
+    "default": 14.0
+  },
+  "base_delay": {
+    "description": "每条消息发送前的基础反应时间，单位秒",
+    "type": "float",
+    "default": 0.25
+  },
+  "cjk_seconds_per_char": {
+    "description": "中文/日文/韩文每个字的打字耗时，单位秒",
+    "type": "float",
+    "default": 1.0
+  },
+  "ascii_seconds_per_char": {
+    "description": "英文/数字每个字符的打字耗时，默认 0.5 表示一秒两个字符",
+    "type": "float",
+    "default": 0.5
+  },
+  "punctuation_seconds": {
+    "description": "标点符号的打字耗时，单位秒",
+    "type": "float",
+    "default": 0.15
+  },
+  "space_seconds": {
+    "description": "空格和空白字符的打字耗时，单位秒",
+    "type": "float",
+    "default": 0.1
+  },
+  "other_seconds_per_char": {
+    "description": "其他字符的打字耗时，单位秒",
+    "type": "float",
+    "default": 0.5
+  },
+  "jitter_min": {
+    "description": "随机浮动下限，单位秒",
+    "type": "float",
+    "default": -0.15
+  },
+  "jitter_max": {
+    "description": "随机浮动上限，单位秒",
+    "type": "float",
+    "default": 0.35
+  },
+  "extra_pause_after_question": {
+    "description": "问号/感叹号/省略号结尾时额外停顿，单位秒",
+    "type": "float",
+    "default": 0.35
+  },
+  "short_message_fast_mode": {
+    "description": "很短的消息是否稍微加速",
+    "type": "bool",
+    "default": true
+  },
+  "short_message_length": {
+    "description": "多少字符以内算短消息",
+    "type": "int",
+    "default": 3
+  },
+  "short_message_multiplier": {
+    "description": "短消息延迟倍率",
+    "type": "float",
+    "default": 0.75
+  },
+  "strip_sentence_period": {
+    "description": "是否移除每段结尾的句号",
+    "type": "bool",
+    "default": true
+  },
+  "only_plain_text": {
+    "description": "只处理纯文本消息链，遇到图片/At/语音等不拆分",
+    "type": "bool",
+    "default": true
+  },
+  "delay_before_first_when_not_immediate": {
+    "description": "如果第一条不立即发送，是否也按文本长度等待",
+    "type": "bool",
+    "default": false
+  }
+}
